@@ -56,9 +56,9 @@ class Pessoa:
     def por_ano_de_nascimento(cls, nome, ano_nascimento):
         idade = cls.ano_atual - ano_nascimento
         return cls(nome, idade)
+    
+    @staticmethod
+    def dizer_oi():
+        print('hello world')
 
 
-p1 = Pessoa.por_ano_de_nascimento('Luiz', 1987)
-print(p1)
-print(p1.nome, p1.idade)
-p1.get_ano_nascimento()
